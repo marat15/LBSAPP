@@ -1,5 +1,6 @@
 package com.example.marik.pinafly;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,6 +16,7 @@ public class LoginActivity extends Activity {
     private EditText  password=null;
     private TextView attempts;
     private Button login;
+    private Button register;
     int counter = 3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class LoginActivity extends Activity {
         attempts = (TextView)findViewById(R.id.textView5);
         attempts.setText(Integer.toString(counter));
         login = (Button)findViewById(R.id.button1);
+        register= (Button)findViewById(R.id.button2);
     }
 
     public void login(View view){
@@ -32,6 +35,7 @@ public class LoginActivity extends Activity {
                 password.getText().toString().equals("admin")){
             Toast.makeText(getApplicationContext(), "Redirecting...",
                     Toast.LENGTH_SHORT).show();
+
         }
         else{
             Toast.makeText(getApplicationContext(), "Wrong Credentials",
@@ -44,6 +48,13 @@ public class LoginActivity extends Activity {
             }
 
         }
+
+    }
+
+
+    public void bluetooth(View view){
+       Intent intent = new Intent(this, BluetoothActivity.class);
+        startActivity(intent);
 
     }
     @Override
