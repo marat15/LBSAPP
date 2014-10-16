@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/LBSAPP.iml" filepath="$PROJECT_DIR$/LBSAPP.iml" />
       <module fileurl="file://$PROJECT_DIR$/PinaFly.iml" filepath="$PROJECT_DIR$/PinaFly.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

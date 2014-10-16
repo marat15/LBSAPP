@@ -6,8 +6,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fffacd"
-    tools:context=".CreateProfile"
+    android:background="@drawable/background"
+    tools:context=".ProfileActivity"
     >
 
     <TextView
@@ -149,6 +149,6 @@
         android:layout_alignRight="@+id/editText5"
         android:layout_alignEnd="@+id/editText5"
         android:layout_marginBottom="95dp"
-        style="@style/btnStyleShakespeare"/>
+        style="@style/btnStyleSandrift"/>
 
 </RelativeLayout>
