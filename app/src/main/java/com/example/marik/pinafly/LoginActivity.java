@@ -57,7 +57,7 @@ public class LoginActivity extends Activity {
         startActivity(intent);
     }
     public void map (View view) {
-        Intent intent1 = new Intent (this, MapActivity.class);
+        Intent intent1 = new Intent (this, GoogleMap.class);
         startActivity(intent1);
     }
 
