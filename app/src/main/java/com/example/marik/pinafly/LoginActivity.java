@@ -52,11 +52,15 @@ public class LoginActivity extends Activity {
     }
 
 
-    public void bluetooth(View view){
-       Intent intent = new Intent(this, BluetoothActivity.class);
+    public void bluetooth(View view) {
+        Intent intent = new Intent(this, BluetoothActivity.class);
         startActivity(intent);
-
     }
+    public void map (View view) {
+        Intent intent1 = new Intent (this, MapActivity.class);
+        startActivity(intent1);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

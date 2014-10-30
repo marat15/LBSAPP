@@ -22,5 +22,7 @@
     <string name="create_profile">Create Profile</string>
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="hello_world">Hello world!</string>
-
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="map">Map</string>
 </resources>

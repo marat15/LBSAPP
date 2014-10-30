@@ -1,0 +1,110 @@
+C9:EE:F2:45:16:2E:3C:3E:4F:F8:11:0B:D7:D0:1D:DD:FB:5C:D6:38;com.example.marik.pinafly
+
+https://code.google.com/apis/console/b/0/?noredirect&pli=1#project:988846389919:access
+
+API key:	
+AIzaSyA2iIUnAfeSKyRyGe3jyaH-DwZdUmVgQuU
+
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\Users\Marik>cd c:\users\marik\.android
+
+c:\Users\Marik\.android>keytool -list -v -keystore "%USERPROFILE%\.android\debug
+.keystore" -alias androiddebugkey -storepass android -keypass android
+Alias name: androiddebugkey
+Creation date: Oct 2, 2014
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Android Debug, O=Android, C=US
+Issuer: CN=Android Debug, O=Android, C=US
+Serial number: 69b06e15
+Valid from: Thu Oct 02 19:57:34 EDT 2014 until: Sat Sep 24 19:57:34 EDT 2044
+Certificate fingerprints:
+         MD5:  1C:75:7F:0C:70:D5:1C:0A:D2:E1:42:4C:09:2C:B3:2D
+         SHA1: C9:EE:F2:45:16:2E:3C:3E:4F:F8:11:0B:D7:D0:1D:DD:FB:5C:D6:38
+         SHA256: D6:74:A0:FD:79:B6:69:06:5D:FE:FB:1B:BC:71:6D:A7:0F:0D:4D:2F:8D:
+1D:98:AD:32:86:78:66:22:EC:82:69
+         Signature algorithm name: SHA256withRSA
+         Version: 3
+
+Extensions:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 98 62 E5 64 53 E7 2B 56   B5 F2 78 63 E5 E9 D5 E2  .b.dS.+V..xc....
+0010: 73 D2 16 78                                        s..x
+]
+]
+
+
+c:\Users\Marik\.android>keytool -list -v -keystore "%USERPROFILE%\.android\debug
+.keystore" -alias androiddebugkey -storepass android -keypass android
+Alias name: androiddebugkey
+Creation date: Oct 2, 2014
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Android Debug, O=Android, C=US
+Issuer: CN=Android Debug, O=Android, C=US
+Serial number: 69b06e15
+Valid from: Thu Oct 02 19:57:34 EDT 2014 until: Sat Sep 24 19:57:34 EDT 2044
+Certificate fingerprints:
+         MD5:  1C:75:7F:0C:70:D5:1C:0A:D2:E1:42:4C:09:2C:B3:2D
+         SHA1: C9:EE:F2:45:16:2E:3C:3E:4F:F8:11:0B:D7:D0:1D:DD:FB:5C:D6:38
+         SHA256: D6:74:A0:FD:79:B6:69:06:5D:FE:FB:1B:BC:71:6D:A7:0F:0D:4D:2F:8D:
+1D:98:AD:32:86:78:66:22:EC:82:69
+         Signature algorithm name: SHA256withRSA
+         Version: 3
+
+Extensions:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 98 62 E5 64 53 E7 2B 56   B5 F2 78 63 E5 E9 D5 E2  .b.dS.+V..xc....
+0010: 73 D2 16 78                                        s..x
+]
+]
+
+
+c:\Users\Marik\.android>cd c:\users\marik\.androidsha1
+The system cannot find the path specified.
+
+c:\Users\Marik\.android> sha1
+'sha1' is not recognized as an internal or external command,
+operable program or batch file.
+
+c:\Users\Marik\.android>keytool -list -v -keystore "%USERPROFILE%\.android\debug
+.keystore" -alias androiddebugkey -storepass android -keypass android
+Alias name: androiddebugkey
+Creation date: Oct 2, 2014
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Android Debug, O=Android, C=US
+Issuer: CN=Android Debug, O=Android, C=US
+Serial number: 69b06e15
+Valid from: Thu Oct 02 19:57:34 EDT 2014 until: Sat Sep 24 19:57:34 EDT 2044
+Certificate fingerprints:
+         MD5:  1C:75:7F:0C:70:D5:1C:0A:D2:E1:42:4C:09:2C:B3:2D
+         SHA1: C9:EE:F2:45:16:2E:3C:3E:4F:F8:11:0B:D7:D0:1D:DD:FB:5C:D6:38
+         SHA256: D6:74:A0:FD:79:B6:69:06:5D:FE:FB:1B:BC:71:6D:A7:0F:0D:4D:2F:8D:
+1D:98:AD:32:86:78:66:22:EC:82:69
+         Signature algorithm name: SHA256withRSA
+         Version: 3
+
+Extensions:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 98 62 E5 64 53 E7 2B 56   B5 F2 78 63 E5 E9 D5 E2  .b.dS.+V..xc....
+0010: 73 D2 16 78                                        s..x
+]
+]
+
+
+c:\Users\Marik\.android>
