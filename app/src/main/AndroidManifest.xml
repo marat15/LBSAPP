@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GoogleMap"
+            android:name=".MapActivity"
             android:label="@string/title_activity_map" >
         </activity>
     </application>
