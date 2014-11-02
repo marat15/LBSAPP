@@ -25,4 +25,6 @@
     <string name="title_activity_map">MapActivity</string>
     <string name="title_activity_maps">Map</string>
     <string name="map">Map</string>
+    <string name="title_activity_main_map_fragment">MainMapFragment</string>
+
 </resources>
