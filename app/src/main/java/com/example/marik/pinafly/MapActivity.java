@@ -8,15 +8,13 @@ import android.content.Intent;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
-import android.provider.Settings;
+import android.provider.MediaStore;
 import android.view.Menu;
-import android.widget.Toast;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -27,6 +25,9 @@ public class MapActivity extends Activity {
     private GoogleMap mMap;
     private LocationManager locationManager;
     private String provider;
+    private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
+    private Uri fileUri;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,10 @@ public class MapActivity extends Activity {
         mMap.setMyLocationEnabled(true);
         mMap.getMyLocation();
 
+
+
+
+
         /*Map Types*/
        // mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
        // mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
@@ -44,8 +49,12 @@ public class MapActivity extends Activity {
         mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
 
         /*Markers with lat/long coordinates*/
-      //  final LatLng TutorialsPoint = new LatLng(21 , 57);
-      //  Marker TP = mMap.addMarker(new MarkerOptions().position(TutorialsPoint).title("TutorialsPoint"));
+        final LatLng FirstMarker = new LatLng(74 , 40.34);
+        final LatLng SecondMarker = new LatLng(55, 66);
+        final LatLng ThirdMarker = new LatLng(66, 55);
+        Marker MA1 = mMap.addMarker(new MarkerOptions().position(FirstMarker).title("Kathryns Apartment"));
+        Marker MA2 = mMap.addMarker(new MarkerOptions().position(SecondMarker).title("Kathryns Apartment"));
+        Marker MA3 = mMap.addMarker(new MarkerOptions().position(ThirdMarker).title("Kathryns Apartment"));
 
         LocationManager service = (LocationManager) getSystemService(LOCATION_SERVICE);
       /*  boolean enabledGPS = service
@@ -92,6 +101,10 @@ public class MapActivity extends Activity {
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin)));
     }*/
 
+    public void  startActivityForResult (Intent intent, int requestCode) {
+
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -114,7 +127,6 @@ public class MapActivity extends Activity {
             showGPSDisabledAlertToUser();
         }
     }
-
 
     private void showGPSDisabledAlertToUser() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MapActivity.this);
@@ -142,5 +154,6 @@ public class MapActivity extends Activity {
         AlertDialog alert = alertDialogBuilder.create();
         alert.show();
     }// ;
+
 
 }

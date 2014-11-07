@@ -3,10 +3,14 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +22,7 @@ public class LoginActivity extends Activity {
     private Button login;
     private Button register;
     int counter = 3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +33,7 @@ public class LoginActivity extends Activity {
         attempts.setText(Integer.toString(counter));
         login = (Button)findViewById(R.id.button1);
         register= (Button)findViewById(R.id.button2);
+
     }
 
     public void login(View view){
@@ -68,4 +74,6 @@ public class LoginActivity extends Activity {
         return true;
     }
 
-}
+
+
+    }

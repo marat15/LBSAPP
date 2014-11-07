@@ -26,5 +26,12 @@
     <string name="title_activity_maps">Map</string>
     <string name="map">Map</string>
     <string name="title_activity_main_map_fragment">MainMapFragment</string>
-
+    <string name="title_activity_tabs">TabsActivity</string>
+    <string name="title_activity_fragment_tab1">fragmentTab1</string>
+    <string name="title_activity_my_tab_listener">MyTabListener</string>
+    <string name="title_activity_fragment_tab2">FragmentTab2</string>
+    <string name="title_activity_fragment_tab3">FragmentTab3</string>
+    <string name ="one">One</string>
+    <string name="One"/>
+    <string name="action_search">Search</string>
 </resources>
