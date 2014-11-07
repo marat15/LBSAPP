@@ -155,5 +155,5 @@ public class MapActivity extends Activity {
         alert.show();
     }// ;
 
-
+////////Kathryn and Liz
 }
