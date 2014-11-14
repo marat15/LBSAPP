@@ -31,7 +31,16 @@
     <string name="title_activity_my_tab_listener">MyTabListener</string>
     <string name="title_activity_fragment_tab2">FragmentTab2</string>
     <string name="title_activity_fragment_tab3">FragmentTab3</string>
-    <string name ="one">One</string>
-    <string name="One"/>
+    <string name="one">One</string>
+    <string name="One"></string>
     <string name="action_search">Search</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_image_pick_avtivity">ImagePickAvtivity</string>
+    <string name="Capture">Capture</string>
+    <string name="tap">Tap Me</string>
+    <string name="title_activity_estimote_receiver">EstimoteReceiver</string>
+    <string name="title_activity_estimote_service">EstimoteService</string>
+    <string name="title_activity_estimote_manager">EstimoteManager</string>
+
 </resources>

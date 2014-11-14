@@ -8,11 +8,9 @@ import android.content.Intent;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.Menu;
-
+import android.view.View;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -25,9 +23,6 @@ public class MapActivity extends Activity {
     private GoogleMap mMap;
     private LocationManager locationManager;
     private String provider;
-    private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
-    private Uri fileUri;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,10 +32,6 @@ public class MapActivity extends Activity {
         mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.mapFragment)).getMap();
         mMap.setMyLocationEnabled(true);
         mMap.getMyLocation();
-
-
-
-
 
         /*Map Types*/
        // mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
@@ -84,7 +75,11 @@ public class MapActivity extends Activity {
 
             //do something
         }*/
-    }
+
+            }
+
+
+
 
     /*public void onLocationChanged(Location location) {
         double lat = location.getLatitude();
@@ -100,6 +95,48 @@ public class MapActivity extends Activity {
                 //.snippet("Inizio del percorso")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin)));
     }*/
+
+    @Override
+    protected void onStart() {
+        super.onStart();  // Always call the superclass method first
+
+
+    }
+
+        @Override
+    public void onPause() {
+        super.onPause();  // Always call the superclass method first
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();  // Always call the superclass method first
+
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();  // Always call the superclass method first
+
+
+    }
+
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();  // Always call the superclass method first
+
+        // Activity being restarted from stopped state
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();  // Always call the superclass
+
+
+    }
+
 
     public void  startActivityForResult (Intent intent, int requestCode) {
 
@@ -155,5 +192,9 @@ public class MapActivity extends Activity {
         alert.show();
     }// ;
 
+    private void camera (View view) {
+        Intent camera = new Intent(this, ImagePickActivity.class);
+        startActivity(camera);
+    }
 ////////Kathryn and Liz
 }
