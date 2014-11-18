@@ -43,4 +43,8 @@ public class AllDemosActivity extends Activity {
             }
         });
     }
+
+    public void onClick (View view){
+        setContentView(R.layout.all_demos);
+    }
 }

@@ -43,6 +43,9 @@
             android:name=".ImagePickActivity"
             android:label="@string/title_activity_image_pick_avtivity" />
         <activity
+            android:name=".AllDemosActivity"
+            android:label="Demos"/>
+        <activity
             android:name=".ListBeaconsActivity"
             android:label="Select Beacon" />
 
