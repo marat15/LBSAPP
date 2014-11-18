@@ -31,7 +31,27 @@
     <string name="title_activity_my_tab_listener">MyTabListener</string>
     <string name="title_activity_fragment_tab2">FragmentTab2</string>
     <string name="title_activity_fragment_tab3">FragmentTab3</string>
-    <string name ="one">One</string>
-    <string name="One"/>
+    <string name="one">One</string>
+    <string name="One"></string>
     <string name="action_search">Search</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_image_pick_avtivity">ImagePickAvtivity</string>
+    <string name="Capture">Capture</string>
+    <string name="tap">Tap Me</string>
+    <string name="camera">camera</string>
+    <string name="title_activity_ranging">RangingActivity</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_beacon">Beacon</string>
+    <string name="title_activity_notify_demo">NotifyDemoActivity</string>
+    <string name="title_activity_distance_background_view">DistanceBackgroundView</string>
+    <string name="title_activity_distance_beacon">DistanceBeaconActivity</string>
+    <string name="title_activity_all_demos">AllDemosActivity</string>
+
 </resources>

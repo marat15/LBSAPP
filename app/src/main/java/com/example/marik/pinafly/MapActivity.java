@@ -8,10 +8,12 @@ import android.content.Intent;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
+import android.provider.Settings;
 import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
@@ -25,9 +27,8 @@ public class MapActivity extends Activity {
     private GoogleMap mMap;
     private LocationManager locationManager;
     private String provider;
-    private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
-    private Uri fileUri;
 
+    Intent myIntent = new Intent(this, ImagePickActivity.class);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,14 @@ public class MapActivity extends Activity {
         mMap.setMyLocationEnabled(true);
         mMap.getMyLocation();
 
+
+       // Button camera1  = (Button) findViewById(R.id.camera);
+        //camera1.setOnClickListener(new View.OnClickListener() {
+          //  public void onClick(View v) {
+
+            //    startActivity(myIntent);
+            //}
+        //});
 
 
 
@@ -84,7 +93,8 @@ public class MapActivity extends Activity {
 
             //do something
         }*/
-    }
+
+            }
 
     /*public void onLocationChanged(Location location) {
         double lat = location.getLatitude();
@@ -101,8 +111,8 @@ public class MapActivity extends Activity {
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin)));
     }*/
 
-    public void  startActivityForResult (Intent intent, int requestCode) {
 
+    public void  startActivityForResult (Intent intent, int requestCode) {
     }
 
     @Override
@@ -111,8 +121,7 @@ public class MapActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
-    private void getGPSInfo() {
+   private void getGPSInfo() {
         Criteria criteria = new Criteria();
         String provider;
         Location location;
@@ -120,40 +129,87 @@ public class MapActivity extends Activity {
                 .getSystemService(Context.LOCATION_SERVICE);
 
         if (locationmanager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-            provider = locationmanager.getBestProvider(criteria, false);
-            location = locationmanager.getLastKnownLocation(provider);
+          provider = locationmanager.getBestProvider(criteria, false);
+        location = locationmanager.getLastKnownLocation(provider);
 
-        } else {
-            showGPSDisabledAlertToUser();
+      //  } else {
+        //  showGPSDisabledAlertToUser();
         }
     }
 
-    private void showGPSDisabledAlertToUser() {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MapActivity.this);
-        alertDialogBuilder
-                .setMessage(
-                        "GPS is disabled. Would you like to enable it?")
-                .setCancelable(false)
-                .setPositiveButton("GPS Settings",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                Intent callGPSSettingIntent = new Intent(
-                                        android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS);
-                                startActivity(callGPSSettingIntent);
+//    private void showGPSDisabledAlertToUser() {
+  //      AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MapActivity.this);
+    //    alertDialogBuilder
+      //          .setMessage(
+        //                "GPS is disabled. Would you like to enable it?")
+          //      .setCancelable(false)
+            //    .setPositiveButton("GPS Settings",
+              //          new DialogInterface.OnClickListener() {
+                //            public void onClick(DialogInterface dialog, int id) {
+                  //              startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+                    //            Intent callGPSSettingIntent = new Intent(
+                      //                  android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                        //        startActivity(callGPSSettingIntent);
 
-                            }
-                        });
+                          //  }
+                        //});
 
-        alertDialogBuilder.setNegativeButton("Cancel",
-                new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
+        //alertDialogBuilder.setNegativeButton("Cancel",
+          //      new DialogInterface.OnClickListener() {
+            //        public void onClick(DialogInterface dialog, int id) {
 
-                        dialog.cancel();
-                    }
-                });
-        AlertDialog alert = alertDialogBuilder.create();
-        alert.show();
-    }// ;
+              //          dialog.cancel();
+                //    }
+                //});
+        //AlertDialog alert = alertDialogBuilder.create();
+        //alert.show();
+    //}// ;
+
+
+
+    public void camera1(View view) {
+        Intent camera1 = new Intent(this, ImagePickActivity.class);
+        startActivity(camera1);
+
+    }
+    @Override
+    protected void onStart() {
+        super.onStart();  // Always call the superclass method first
+
+
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();  // Always call the superclass method first
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();  // Always call the superclass method first
+
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();  // Always call the superclass method first
+
+
+    }
+
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();  // Always call the superclass method first
+
+        // Activity being restarted from stopped state
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();  // Always call the superclass
+    }
 
 ////////Kathryn and Liz
 }

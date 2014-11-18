@@ -25,6 +25,7 @@ public class BluetoothActivity extends Activity {
     private BluetoothAdapter BA;
     private Set<BluetoothDevice>pairedDevices;
     private ListView lv;
+    Button camera;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,4 +90,5 @@ public class BluetoothActivity extends Activity {
         inflater.inflate(R.menu.actionbarmenu, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
 }

@@ -12,13 +12,14 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyBc0A2ZvON8vQW3fs1sPs67vO4zb5pQbjE" />
+            android:value="AIzaSyBc0A2ZvON8vQW3fs1sPs67vO4zb5pQbjE,AIzaSyBuYYmkzHG21ZdE0SXCvQqrJ8K2ESo0CCE,AIzaSyDzomvmpPg1h-z9mue8xXS6L6vpwM0Q-c0" />
 
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -37,11 +38,34 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.pinafly.LoginActivity" />
-            </activity>
-            </application>
+        </activity>
+        <activity
+            android:name=".ImagePickActivity"
+            android:label="@string/title_activity_image_pick_avtivity" />
+        <activity
+            android:name=".ListBeaconsActivity"
+            android:label="Select Beacon" />
+
+        <activity
+            android:name=".DistanceBeaconActivity"
+            android:label="Distance Demo" />
+
+        <activity
+            android:name=".NotifyDemoActivity"
+            android:label="Notify Demo" />
+
+        <activity
+            android:name=".CharacteristicsDemoActivity"
+            android:label="Characteristics Demo" />
+
+        <!-- Estimote service responsible for scanning beacons. -->
+        <service
+            android:name="com.estimote.sdk.service.BeaconService"
+            android:exported="false" />
+    </application>
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="18"
         android:targetSdkVersion="19" />
 
     <uses-feature
@@ -57,7 +81,19 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature android:name="android.hardware.camera" android:required="false" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Declaration that this app is usable on phones with Bluetooth Low Energy. -->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <service
+        android:name="com.estimote.sdk.service.BeaconService"
+        android:exported="false" />
+
 </manifest>

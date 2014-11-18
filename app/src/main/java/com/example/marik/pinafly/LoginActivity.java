@@ -62,9 +62,28 @@ public class LoginActivity extends Activity {
         Intent intent = new Intent(this, BluetoothActivity.class);
         startActivity(intent);
     }
+
     public void map (View view) {
         Intent intent1 = new Intent (this, MapActivity.class);
         startActivity(intent1);
+    }
+
+    public void camera(View view) {
+        Intent camera = new Intent(this, ImagePickActivity.class);
+        startActivity(camera);
+
+    }
+
+    //public void NavigationFragmentDrawer(View view) {
+      //  Intent navigationDrawerFragment = new Intent(this, .class);
+        //startActivity(navigationDrawerFragment);
+
+    //}
+
+    public void AllDemos(View view) {
+        Intent allDemos = new Intent(this, AllDemosActivity.class);
+        startActivity(allDemos);
+
     }
 
     @Override
@@ -76,4 +95,5 @@ public class LoginActivity extends Activity {
 
 
 
-    }
+
+}
