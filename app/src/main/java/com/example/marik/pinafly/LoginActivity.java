@@ -32,7 +32,7 @@ public class LoginActivity extends Activity {
         attempts = (TextView)findViewById(R.id.textView5);
         attempts.setText(Integer.toString(counter));
         login = (Button)findViewById(R.id.button1);
-        register= (Button)findViewById(R.id.button2);
+
 
     }
 
@@ -41,21 +41,24 @@ public class LoginActivity extends Activity {
                 password.getText().toString().equals("admin")){
             Toast.makeText(getApplicationContext(), "Redirecting...",
                     Toast.LENGTH_SHORT).show();
-
+           Intent activity2;
+            activity2 = new Intent(this, Activity2.class);
+            startActivity(activity2);
         }
+
         else{
             Toast.makeText(getApplicationContext(), "Wrong Credentials",
                     Toast.LENGTH_SHORT).show();
-            attempts.setBackgroundColor(Color.RED);
-            counter--;
-            attempts.setText(Integer.toString(counter));
-            if(counter==0){
-                login.setEnabled(false);
+            //attempts.setBackgroundColor(Color.RED);
+            //counter--;
+            //attempts.setText(Integer.toString(counter));
+            //if(counter==0){
+            //    login.setEnabled(false);
             }
 
         }
 
-    }
+
 
 
     public void bluetooth(View view) {

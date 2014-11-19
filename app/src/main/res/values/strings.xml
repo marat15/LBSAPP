@@ -53,5 +53,9 @@
     <string name="title_activity_distance_background_view">DistanceBackgroundView</string>
     <string name="title_activity_distance_beacon">DistanceBeaconActivity</string>
     <string name="title_activity_all_demos">AllDemosActivity</string>
+    <string name="notify">Notify</string>
+    <string name="change_beacon_minor">Change Beacon\'s Minor</string>
+    <string name="distance">Distance</string>
+    <string name="activities">Activities</string>
 
 </resources>

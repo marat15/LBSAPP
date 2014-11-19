@@ -13,6 +13,7 @@
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyBc0A2ZvON8vQW3fs1sPs67vO4zb5pQbjE,AIzaSyBuYYmkzHG21ZdE0SXCvQqrJ8K2ESo0CCE,AIzaSyDzomvmpPg1h-z9mue8xXS6L6vpwM0Q-c0" />
+        <uses-library android:name="com.google.android.maps"/>
 
         <activity
             android:name=".LoginActivity"
@@ -39,6 +40,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.pinafly.LoginActivity" />
         </activity>
+        <activity
+            android:name=".Activity2"
+            android:label="App Activities" />
         <activity
             android:name=".ImagePickActivity"
             android:label="@string/title_activity_image_pick_avtivity" />
@@ -84,6 +88,9 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.example.mapdemoapiv2.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
 
     <!-- Declaration that this app is usable on phones with Bluetooth Low Energy. -->
     <uses-feature
