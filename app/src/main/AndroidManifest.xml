@@ -5,19 +5,20 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
+        android:label="PinaFly"
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyBc0A2ZvON8vQW3fs1sPs67vO4zb5pQbjE,AIzaSyBuYYmkzHG21ZdE0SXCvQqrJ8K2ESo0CCE,AIzaSyDzomvmpPg1h-z9mue8xXS6L6vpwM0Q-c0" />
-        <uses-library android:name="com.google.android.maps"/>
+            android:value="AIzaSyAg5E98p6zzgSQAX_hhEAvjsqAmRJJFwb8" />
+
+        <uses-library android:name="com.google.android.maps" />
 
         <activity
             android:name=".LoginActivity"
-            android:label="@string/app_name">
+            android:label="Welcome to PinaFly">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,35 +36,35 @@
         </activity>
         <activity
             android:name=".MapActivity"
-            android:label="@string/title_activity_map">
+            android:label="Google Map">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.pinafly.LoginActivity" />
         </activity>
         <activity
-            android:name=".Activity2"
-            android:label="App Activities" />
+            android:name="com.example.marik.pinafly.Activity2"
+            android:label="Pinafly Activities" />
         <activity
-            android:name=".ImagePickActivity"
-            android:label="@string/title_activity_image_pick_avtivity" />
+            android:name="com.example.marik.pinafly.ImagePickActivity"
+            android:label="Take a picture" />
         <activity
-            android:name=".AllDemosActivity"
-            android:label="Demos"/>
+            android:name="com.example.marik.pinafly.AllDemosActivity"
+            android:label="Beacon Actions" />
         <activity
-            android:name=".ListBeaconsActivity"
+            android:name="com.example.marik.pinafly.ListBeaconsActivity"
             android:label="Select Beacon" />
 
         <activity
-            android:name=".DistanceBeaconActivity"
-            android:label="Distance Demo" />
+            android:name="com.example.marik.pinafly.DistanceBeaconActivity"
+            android:label="Distance" />
 
         <activity
-            android:name=".NotifyDemoActivity"
-            android:label="Notify Demo" />
+            android:name="com.example.marik.pinafly.NotifyDemoActivity"
+            android:label="Notification" />
 
         <activity
-            android:name=".CharacteristicsDemoActivity"
-            android:label="Characteristics Demo" />
+            android:name="com.example.marik.pinafly.CharacteristicsDemoActivity"
+            android:label="Characteristics " />
 
         <!-- Estimote service responsible for scanning beacons. -->
         <service

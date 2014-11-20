@@ -1,23 +1,19 @@
 package com.example.marik.pinafly;
+
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends Activity {
 
-    private EditText  username=null;
-    private EditText  password=null;
+    private EditText username = null;
+    private EditText password = null;
     private TextView attempts;
     private Button login;
     private Button register;
@@ -27,26 +23,24 @@ public class LoginActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        username = (EditText)findViewById(R.id.editText1);
-        password = (EditText)findViewById(R.id.editText2);
-        attempts = (TextView)findViewById(R.id.textView5);
+        username = (EditText) findViewById(R.id.editText1);
+        password = (EditText) findViewById(R.id.editText2);
+        attempts = (TextView) findViewById(R.id.textView5);
         attempts.setText(Integer.toString(counter));
-        login = (Button)findViewById(R.id.button1);
+        login = (Button) findViewById(R.id.button1);
 
 
     }
 
-    public void login(View view){
-        if(username.getText().toString().equals("admin") &&
-                password.getText().toString().equals("admin")){
+    public void login(View view) {
+        if (username.getText().toString().equals("admin") &&
+                password.getText().toString().equals("admin")) {
             Toast.makeText(getApplicationContext(), "Redirecting...",
                     Toast.LENGTH_SHORT).show();
-           Intent activity2;
+            Intent activity2;
             activity2 = new Intent(this, Activity2.class);
             startActivity(activity2);
-        }
-
-        else{
+        } else {
             Toast.makeText(getApplicationContext(), "Wrong Credentials",
                     Toast.LENGTH_SHORT).show();
             //attempts.setBackgroundColor(Color.RED);
@@ -54,11 +48,9 @@ public class LoginActivity extends Activity {
             //attempts.setText(Integer.toString(counter));
             //if(counter==0){
             //    login.setEnabled(false);
-            }
-
         }
 
-
+    }
 
 
     public void bluetooth(View view) {
@@ -66,8 +58,8 @@ public class LoginActivity extends Activity {
         startActivity(intent);
     }
 
-    public void map (View view) {
-        Intent intent1 = new Intent (this, MapActivity.class);
+    public void map(View view) {
+        Intent intent1 = new Intent(this, MapActivity.class);
         startActivity(intent1);
     }
 
@@ -78,8 +70,8 @@ public class LoginActivity extends Activity {
     }
 
     //public void NavigationFragmentDrawer(View view) {
-      //  Intent navigationDrawerFragment = new Intent(this, .class);
-        //startActivity(navigationDrawerFragment);
+    //  Intent navigationDrawerFragment = new Intent(this, .class);
+    //startActivity(navigationDrawerFragment);
 
     //}
 
@@ -95,8 +87,6 @@ public class LoginActivity extends Activity {
         getMenuInflater().inflate(R.menu.login, menu);
         return true;
     }
-
-
 
 
 }

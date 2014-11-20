@@ -6,7 +6,7 @@
     <string name="login">Login</string>
     <string name="username">Username:</string>
     <string name="password">Password:</string>
-    <string name="Login">Login:</string>
+    <string name="Login">Login</string>
     <string name="attempts">Attempts Left:</string>
     <string name="your_name">Name</string>
     <string name="email">Email</string>
@@ -57,5 +57,6 @@
     <string name="change_beacon_minor">Change Beacon\'s Minor</string>
     <string name="distance">Distance</string>
     <string name="activities">Activities</string>
+    <string name="tap_to_pin">Tap to Start Pinning!</string>
 
 </resources>

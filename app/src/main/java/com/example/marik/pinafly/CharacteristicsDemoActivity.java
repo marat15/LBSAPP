@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.estimote.sdk.Beacon;
 import com.estimote.sdk.connection.BeaconConnection;
 
@@ -71,7 +72,8 @@ public class CharacteristicsDemoActivity extends Activity {
      */
     private View.OnClickListener createUpdateButtonListener() {
         return new View.OnClickListener() {
-            @Override public void onClick(View v) {
+            @Override
+            public void onClick(View v) {
                 int minor = parseMinorFromEditView();
                 if (minor == -1) {
                     showToast("Minor must be a number");
@@ -97,17 +99,21 @@ public class CharacteristicsDemoActivity extends Activity {
         // Minor value will be normalized if it is not in the range.
         // Minor should be 16-bit unsigned integer.
         connection.writeMinor(minor, new BeaconConnection.WriteCallback() {
-            @Override public void onSuccess() {
+            @Override
+            public void onSuccess() {
                 runOnUiThread(new Runnable() {
-                    @Override public void run() {
+                    @Override
+                    public void run() {
                         showToast("Minor value updated");
                     }
                 });
             }
 
-            @Override public void onError() {
+            @Override
+            public void onError() {
                 runOnUiThread(new Runnable() {
-                    @Override public void run() {
+                    @Override
+                    public void run() {
                         showToast("Minor not updated");
                     }
                 });
@@ -117,9 +123,11 @@ public class CharacteristicsDemoActivity extends Activity {
 
     private BeaconConnection.ConnectionCallback createConnectionCallback() {
         return new BeaconConnection.ConnectionCallback() {
-            @Override public void onAuthenticated(final BeaconConnection.BeaconCharacteristics beaconChars) {
+            @Override
+            public void onAuthenticated(final BeaconConnection.BeaconCharacteristics beaconChars) {
                 runOnUiThread(new Runnable() {
-                    @Override public void run() {
+                    @Override
+                    public void run() {
                         statusView.setText("Status: Connected to beacon");
                         StringBuilder sb = new StringBuilder()
                                 .append("Major: ").append(beacon.getMajor()).append("\n")
@@ -134,17 +142,21 @@ public class CharacteristicsDemoActivity extends Activity {
                 });
             }
 
-            @Override public void onAuthenticationError() {
+            @Override
+            public void onAuthenticationError() {
                 runOnUiThread(new Runnable() {
-                    @Override public void run() {
+                    @Override
+                    public void run() {
                         statusView.setText("Status: Cannot connect to beacon. Authentication problems.");
                     }
                 });
             }
 
-            @Override public void onDisconnected() {
+            @Override
+            public void onDisconnected() {
                 runOnUiThread(new Runnable() {
-                    @Override public void run() {
+                    @Override
+                    public void run() {
                         statusView.setText("Status: Disconnected from beacon");
                     }
                 });

@@ -22,8 +22,8 @@ public class Activity2 extends Activity {
         startActivity(intent);
     }
 
-    public void map (View view) {
-        Intent intent1 = new Intent (this, MapActivity.class);
+    public void map(View view) {
+        Intent intent1 = new Intent(this, MapActivity.class);
         startActivity(intent1);
     }
 
@@ -34,8 +34,8 @@ public class Activity2 extends Activity {
     }
 
     //public void NavigationFragmentDrawer(View view) {
-      //  Intent navigationDrawerFragment = new Intent(this, .class);
-        //startActivity(navigationDrawerFragment);
+    //  Intent navigationDrawerFragment = new Intent(this, .class);
+    //startActivity(navigationDrawerFragment);
 
     //}
 
@@ -51,8 +51,6 @@ public class Activity2 extends Activity {
         getMenuInflater().inflate(R.menu.login, menu);
         return true;
     }
-
-
 
 
 }

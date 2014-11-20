@@ -6,24 +6,26 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    android:background="@drawable/background"
+    tools:context=".ImagePickActivity">
 
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="34dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
         android:contentDescription="@string/hello_world"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/camera1" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/imageView1"
-        android:text="@string/tap"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="@string/tap_to_pin"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 
