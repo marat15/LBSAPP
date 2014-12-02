@@ -48,22 +48,22 @@
             android:name="com.example.marik.pinafly.ImagePickActivity"
             android:label="Take a picture" />
         <activity
-            android:name="com.example.marik.pinafly.AllDemosActivity"
+            android:name="com.estimote.examples.demos.AllDemosActivity"
             android:label="Beacon Actions" />
         <activity
-            android:name="com.example.marik.pinafly.ListBeaconsActivity"
+            android:name="com.estimote.examples.demos.ListBeaconsActivity"
             android:label="Select Beacon" />
 
         <activity
-            android:name="com.example.marik.pinafly.DistanceBeaconActivity"
+            android:name="com.estimote.examples.demos.DistanceBeaconActivity"
             android:label="Distance" />
 
         <activity
-            android:name="com.example.marik.pinafly.NotifyDemoActivity"
+            android:name="com.estimote.examples.demos.NotifyDemoActivity"
             android:label="Notification" />
 
         <activity
-            android:name="com.example.marik.pinafly.CharacteristicsDemoActivity"
+            android:name="com.estimote.examples.demos.CharacteristicsDemoActivity"
             android:label="Characteristics " />
 
         <!-- Estimote service responsible for scanning beacons. -->

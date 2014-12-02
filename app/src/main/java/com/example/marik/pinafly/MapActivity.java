@@ -44,12 +44,12 @@ public class MapActivity extends android.support.v4.app.FragmentActivity {
         });
 
         /*Markers with lat/long coordinates*/
-        final LatLng FirstMarker = new LatLng(74, 40.34);
-        final LatLng SecondMarker = new LatLng(55, 66);
-        final LatLng ThirdMarker = new LatLng(66, 55);
-        Marker MA1 = mMap.addMarker(new MarkerOptions().position(FirstMarker).title("Kathryns Apartment"));
-        Marker MA2 = mMap.addMarker(new MarkerOptions().position(SecondMarker).title("Kathryns Apartment"));
-        Marker MA3 = mMap.addMarker(new MarkerOptions().position(ThirdMarker).title("Kathryns Apartment"));
+        final LatLng FirstMarker = new LatLng(40.768, -73.964);
+        final LatLng SecondMarker = new LatLng(40.760, -73.600);
+        final LatLng ThirdMarker = new LatLng(40.763, -73.66);
+        Marker MA1 = mMap.addMarker(new MarkerOptions().position(FirstMarker).title("Beacon1 - Kathryns Apartment"));
+        Marker MA2 = mMap.addMarker(new MarkerOptions().position(SecondMarker).title("Beacon2 - Liz's Apartment"));
+        Marker MA3 = mMap.addMarker(new MarkerOptions().position(ThirdMarker).title("Beacon3 - Empty Apartment"));
     }
 
 //

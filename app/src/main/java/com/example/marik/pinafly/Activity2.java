@@ -40,7 +40,7 @@ public class Activity2 extends Activity {
     //}
 
     public void AllDemos(View view) {
-        Intent allDemos = new Intent(this, AllDemosActivity.class);
+        Intent allDemos = new Intent(this, com.estimote.examples.demos.AllDemosActivity.class);
         startActivity(allDemos);
 
     }

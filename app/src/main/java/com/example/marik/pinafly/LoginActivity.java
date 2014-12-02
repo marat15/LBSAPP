@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.estimote.examples.demos.AllDemosActivity;
+
 public class LoginActivity extends Activity {
 
     private EditText username = null;
