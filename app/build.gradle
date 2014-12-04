@@ -39,6 +39,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.google.android.gms:play-services:6.1.11'
     compile files('libs/estimote-sdk-preview.jar')
+    compile files ('libs/com.mysql.jdbc_5.1.5.jar')
 }
 
 task wrapper(type: Wrapper) {

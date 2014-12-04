@@ -1,6 +1,7 @@
 package com.example.marik.pinafly;
 
 import android.content.Intent;
+import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -40,6 +41,18 @@ public class MapActivity extends android.support.v4.app.FragmentActivity {
                 LatLng latLng = mMap.getCameraPosition().target;
                 Toast.makeText(getApplicationContext(), "Location: " + latLng, Toast.LENGTH_SHORT).show();
 
+                //Location locationA = new Location("point A");
+
+                //locationA.setLatitude(40.768);
+                //locationA.setLongitude(-73.964);
+
+                //Location locationB = new Location("point B");
+
+                //locationB.setLatitude(40.760);
+                //locationB.setLongitude(-73.600);
+
+                //float distance = locationA.distanceTo(locationB);
+
             }
         });
 
@@ -51,6 +64,7 @@ public class MapActivity extends android.support.v4.app.FragmentActivity {
         Marker MA2 = mMap.addMarker(new MarkerOptions().position(SecondMarker).title("Beacon2 - Liz's Apartment"));
         Marker MA3 = mMap.addMarker(new MarkerOptions().position(ThirdMarker).title("Beacon3 - Empty Apartment"));
     }
+
 
 //
 private void setUpMap(){
