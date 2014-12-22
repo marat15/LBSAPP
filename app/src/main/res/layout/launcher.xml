@@ -23,6 +23,17 @@
         android:layout_marginTop="150dp"
         android:layout_centerHorizontal="true" />
 
+    <Button
+
+        android:id="@+id/monitoring"
+        android:layout_height="75dp"
+        android:layout_width="210dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="Database1"
+        android:text="@string/extract_a_point"
+        style="@style/btnStyleSandrift"
+        android:layout_marginTop="210dp" />
+
 
     <Button
 
@@ -30,10 +41,12 @@
         android:layout_height="75dp"
         android:layout_width="210dp"
         android:layout_centerHorizontal="true"
-        android:onClick="AllDemos"
+        android:onClick="Monitor"
         android:text="Locate Beacons"
         style="@style/btnStyleSandrift"
         android:layout_marginTop="290dp" />
+
+
 
     <TextView
         android:id="@+id/textView1"

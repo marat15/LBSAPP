@@ -5,16 +5,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
+
+
 
 public class Activity2 extends Activity {
 
-
+    public Button DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.launcher);
-
-
     }
 
     public void bluetooth(View view) {
@@ -39,11 +40,23 @@ public class Activity2 extends Activity {
 
     //}
 
-    public void AllDemos(View view) {
-        Intent allDemos = new Intent(this, com.estimote.examples.demos.AllDemosActivity.class);
-        startActivity(allDemos);
 
+
+    public void Database1(View view) {
+        Intent mainDB = new Intent(this, DBMainActivity.class);
+        startActivity(mainDB);
     }
+
+   // public void Monitor(View view) {
+   //     Intent allDemos = new Intent(this, Monitor.class);
+   //     startActivity(allDemos);
+   // }
+
+    public void Monitor (View view) {
+        Intent monitor = new Intent(this, Monitor.class);
+        startActivity(monitor);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

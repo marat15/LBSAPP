@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.marik.pinafly">
+    package="com.example.marik.pinafly" >
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="PinaFly"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -18,7 +18,7 @@
 
         <activity
             android:name=".LoginActivity"
-            android:label="Welcome to PinaFly">
+            android:label="Welcome to PinaFly" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,7 +27,7 @@
         </activity>
         <activity
             android:name=".BluetoothActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,16 +36,19 @@
         </activity>
         <activity
             android:name=".MapActivity"
-            android:label="Google Map">
+            android:label="Google Map" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.pinafly.LoginActivity" />
         </activity>
         <activity
-            android:name="com.example.marik.pinafly.Activity2"
+            android:name=".Activity2"
             android:label="Pinafly Activities" />
         <activity
-            android:name="com.example.marik.pinafly.ImagePickActivity"
+            android:name=".DBMainActivity"
+            android:label="Pinafly Database" />
+        <activity
+            android:name=".ImagePickActivity"
             android:label="Take a picture" />
         <activity
             android:name="com.estimote.examples.demos.AllDemosActivity"
@@ -53,23 +56,87 @@
         <activity
             android:name="com.estimote.examples.demos.ListBeaconsActivity"
             android:label="Select Beacon" />
-
         <activity
             android:name="com.estimote.examples.demos.DistanceBeaconActivity"
             android:label="Distance" />
-
         <activity
             android:name="com.estimote.examples.demos.NotifyDemoActivity"
             android:label="Notification" />
-
+        <activity
+            android:name=".Monitoring"
+            android:label="Notification" />
+        <activity
+            android:name=".Monitor"
+            android:label="Notification" />
+        <activity
+            android:name=".Ranging"
+            android:label="Notification" />
         <activity
             android:name="com.estimote.examples.demos.CharacteristicsDemoActivity"
             android:label="Characteristics " />
+        //
+
+        <!--
+        <activity
+            android:label="Insert Record"
+            android:name=".insert" >
+            <intent-filter >
+                <action android:name="q.w.e.qwe" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="Get Record"
+            android:name=".select" >
+            <intent-filter >
+                <action android:name="q.w.e.qwe" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:label="Delete Record"
+            android:name=".delete" >
+            <intent-filter >
+                <action android:name="q.w.e.qwe" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="Update Record"
+            android:name=".update" >
+            <intent-filter >
+                <action android:name="q.w.e.qwe" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+//
 
         <!-- Estimote service responsible for scanning beacons. -->
         <service
             android:name="com.estimote.sdk.service.BeaconService"
             android:exported="false" />
+
+        <activity
+            android:name=".DBActivity"
+            android:label="@string/title_activity_db" >
+        </activity>
+        <activity
+            android:name=".DBDatabaseAdapter"
+            android:label="@string/title_activity_dbhelper" >
+        </activity>
+        <activity
+            android:name=".DatabaseUploadActivity"
+            android:label="@string/title_activity_dbinsert" >
+        </activity>
     </application>
 
     <uses-sdk
@@ -82,6 +149,7 @@
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="permission_name" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -92,13 +160,10 @@
     <uses-permission android:name="com.example.mapdemoapiv2.permission.MAPS_RECEIVE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
-
     <!-- Declaration that this app is usable on phones with Bluetooth Low Energy. -->
     <uses-feature
         android:name="android.hardware.bluetooth_le"
         android:required="true" />
-
-
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />

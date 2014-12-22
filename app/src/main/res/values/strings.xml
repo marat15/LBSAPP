@@ -32,7 +32,6 @@
     <string name="title_activity_fragment_tab2">FragmentTab2</string>
     <string name="title_activity_fragment_tab3">FragmentTab3</string>
     <string name="one">One</string>
-    <string name="One"></string>
     <string name="action_search">Search</string>
     <string name="title_activity_my">MyActivity</string>
     <string name="title_activity_camera">CameraActivity</string>
@@ -58,5 +57,27 @@
     <string name="distance">Distance</string>
     <string name="activities">Activities</string>
     <string name="tap_to_pin">Tap to Start Pinning!</string>
+    <string name="first_beacon">First iBeacon</string>
+    <string name="proximity_uuid">Proximity UUID</string>
+    <string name="major">Major</string>
+    <string name="minor">Minor</string>
+    <string name="rssi">Rssi</string>
+    <string name="second_beacon">Second iBeacon</string>
+    <string name="extract_a_point">Take a point</string>
+    <string name="insert">Insert</string>
+    <string name="retrieve">Retrieve</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="title_activity_db">DBActivity</string>
+    <string name="title_activity_dbhelper">DBHelper</string>
+    <string name="title_activity_dbinsert">DBinsert</string>
+    <string name="image">Image</string>
+    <string name="monitor1">First_iBeacon</string>
+    <string name="monitor2">Proximity_UUID"</string>
+    <string name="monitor3">Major</string>
+    <string name="monitor4">Minor</string>
+    <string name="monitor5">Rssi</string>
+    <string name="monitor6">Second_iBeacon</string>
+
 
 </resources>
